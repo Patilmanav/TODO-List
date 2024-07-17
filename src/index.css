@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.gridlayout{
+  display: grid;
+  grid-template-columns: 4fr 4fr 1fr;
+}
+
+#navListView{
+  /* position: absolute;
+  left: 90%; */
+  background: #000;
+  min-width: 5vmax;
+
+}
+
+#navListView li{
+  cursor: pointer;
+  margin: 5px;
+  color: white;
+  display: block;
+}
+
+/* Table Styling/ */
+/* Basic table styling */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* margin: 25px 0; */
+  font-size: 18px;
+  /* text-align: left; */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensures rounded corners are visible */
+
+}
+
+/* Header styling */
+.styled-table thead tr {
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+.styled-table th, .styled-table td {
+  padding: 5px 5px;
+}
+@media screen and (min-width: 480px){
+  /* Cell padding */
+  .styled-table th, .styled-table td {
+    padding: 12px 15px;
+  }
+  
+}
+
+/* Row borders */
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+/* table styling end here */
+
+/* button:hover{
+  font-size: ;
+} */
